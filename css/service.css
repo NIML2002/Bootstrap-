@@ -1,0 +1,132 @@
+/* SERVICES */
+
+.title-style-main {
+    z-index: 1;
+}
+.service-section {
+    background: #009f4d;
+}
+h4.title-bg-content {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    z-index: 0;
+    opacity: 0.14;
+    font-size: 12vw;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.service-section .card {
+    border: none;
+    background: none;
+}
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.service-details {
+    background: #fff;
+    padding: 30px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+.service-section .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+
+.service-section .card img {
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.service-section span.label-style {
+    color: #009f4d;
+    display: inline-block;
+    background: rgb(0 159 77 / 16%);
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.service-details {
+    background: #fff;
+    padding: 30px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+a.service-heading {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #060606;
+    margin: 15px 0;
+    font-family: "Source Sans Pro Regular";
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.service-section .text__darkmode {
+    color: #707070;
+    font-family: "Source Sans Pro Regular";
+}
+
+.service-section .lead {
+    font-family: "Source Sans Pro Regular";
+}
+
+a.service-heading:hover {
+    color: #009f4d;
+}
+
+/* SERVICES DARKMODE */
+.dark .service-section .card-body {
+    background-color: #222222;
+    border: none;
+}
+
+.dark a.service-heading {
+    color: #fdfffc;
+}
+
+.dark a.service-heading:hover {
+    color: #009f4d;
+}
+
+.dark .service-section .text__darkmode {
+    color: #b7b7b7;
+}
+
+/* SERVICES RESPONSIVE */
+@media screen and (max-width: 992px) {
+    .service-section .title-style {
+        font-size: 35px;
+    }
+    .service-section h5.small-title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .service-section .title-style {
+        font-size: 32px;
+    }
+    .service-section h5.small-title {
+        font-size: 18px;
+    }
+}

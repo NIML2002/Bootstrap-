@@ -1,0 +1,181 @@
+/* CAROUSEL */
+.myCarousel-left {
+    right: 48%;
+    z-index: 2;
+    top: 27%;
+}
+.myCarousel-left h2 {
+    color: #f4f4f4;
+    font-size: 120px;
+    font-weight: bold;
+    margin-left: -0.5em;
+}
+.myCarousel h3 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+}
+p.myCarousel-text {
+    font-size: 19px;
+    color: #707070;
+    line-height: 27px;
+    font-family: "Source Sans Pro Regular", sans-serif;
+    margin: 0;
+}
+.carousel__pic1 {
+    background-image: url(../img/b1.jpg);
+    position: relative;
+}
+.carousel__pic1::after,
+.carousel__pic2::after,
+.carousel__pic3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 17%);
+}
+.carousel__pic2 {
+    background-image: url(../img/b8.jpg);
+}
+.carousel__pic3 {
+    background-image: url(../img/b4.jpg);
+}
+.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    position: relative;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fb811e;
+}
+.carousel__pic {
+    height: 100vh;
+    position: relative;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 13px;
+    height: 13px;
+}
+.carousel__pic--text {
+    position: absolute;
+}
+.carousel__pic--text {
+    position: absolute;
+    bottom: 4%;
+    color: white;
+    right: 2%;
+    z-index: 2;
+}
+.carousel__pic--text p {
+    font-size: 17px;
+    font-family: "Source Sans Pro";
+}
+.owl-carousel .owl-stage-outer {
+    border-bottom-left-radius: 20px;
+}
+
+/* CAROUSEL DARKMODE */
+
+/* #27282b bg-dark color */
+.dark .myCarousel__dark {
+    background-color: #222222;
+}
+.dark .myCarousel__h2--dark {
+    color: #0b0d0e;
+}
+
+.dark .myCarousel h3 {
+    color: #fdfffc;
+}
+.dark p.myCarousel-text {
+    color: #b7b7b7;
+}
+
+/* CAROUSEL RESPONSIVE */
+@media screen and (max-width: 1440px) {
+    .myCarousel h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .myCarousel-left h2 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .myCarousel h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .myCarousel-left h2 {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .myCarousel-left {
+        right: 55%;
+    }
+    .myCarousel h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .myCarousel-left h2 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .myCarousel-left {
+        right: 5%;
+        background: #fff;
+        padding: 3em 2em 2em 4em;
+        border-radius: 8px;
+        width: 90%;
+    }
+    .myCarousel__table {
+        padding-top: 30px;
+    }
+    .myCarousel-left h2 {
+        position: absolute;
+        line-height: 0.2;
+        z-index: -1;
+        left: 9%;
+        top: 15%;
+    }
+    .dark .myCarousel-left {
+        background-color: #222222;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .myCarousel h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .myCarousel-left h2 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .myCarousel h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .myCarousel-left h2 {
+        font-size: 60px;
+        left: 13%;
+        top: 13%;
+    }
+    .myCarousel-left {
+        top: 17%;
+    }
+}
